@@ -1,0 +1,73 @@
+Cmp-Mod V01 Created by Cvpcb (2014-09-02 BZR 5112)-product   date = lun. 21 sept. 2015 18:05:03 CEST
+
+BeginCmp
+TimeStamp = /55C629C7;
+Reference = C1;
+ValeurCmp = 10-100nf;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55F00F72;
+Reference = C2;
+ValeurCmp = 100nf;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55C62A04;
+Reference = D1;
+ValeurCmp = LED IR;
+IdModule  = LEDs:LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /55CE17A0;
+Reference = D2;
+ValeurCmp = LED Temoin;
+IdModule  = LEDs:LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /55F00334;
+Reference = IC1;
+ValeurCmp = ATTINY85-P;
+IdModule  = Sockets_DIP:DIP-8__300_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55F00CF2;
+Reference = P1;
+ValeurCmp = Alim;
+IdModule  = Discret:CR2032H;
+EndCmp
+
+BeginCmp
+TimeStamp = /55C62A20;
+Reference = R1;
+ValeurCmp = 50;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /55C62A13;
+Reference = R2;
+ValeurCmp = 600;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /55CE1751;
+Reference = R3;
+ValeurCmp = 200;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /55C62A8C;
+Reference = SW1;
+ValeurCmp = SPST;
+IdModule  = push_button:push_mini;
+EndCmp
+
+EndListe

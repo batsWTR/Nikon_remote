@@ -1,0 +1,227 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:D50_remote_kicad-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "9 sep 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C1
+U 1 1 55C629C7
+P 2350 3900
+F 0 "C1" H 2375 4000 50  0000 L CNN
+F 1 "10-100nf" H 2375 3800 50  0000 L CNN
+F 2 "C1" H 2388 3750 30  0001 C CNN
+F 3 "" H 2350 3900 60  0000 C CNN
+	1    2350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 55C62A04
+P 2700 4400
+F 0 "D1" H 2700 4500 50  0000 C CNN
+F 1 "LED IR" H 2700 4300 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 2700 4400 60  0001 C CNN
+F 3 "" H 2700 4400 60  0000 C CNN
+	1    2700 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 55C62A13
+P 1750 2950
+F 0 "R2" V 1830 2950 50  0000 C CNN
+F 1 "600" V 1750 2950 50  0000 C CNN
+F 2 "Discret:R3" V 1680 2950 30  0001 C CNN
+F 3 "" H 1750 2950 30  0000 C CNN
+	1    1750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 55C62A20
+P 2700 3750
+F 0 "R1" V 2780 3750 50  0000 C CNN
+F 1 "50" V 2700 3750 50  0000 C CNN
+F 2 "Discret:R3" V 2630 3750 30  0001 C CNN
+F 3 "" H 2700 3750 30  0000 C CNN
+	1    2700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW1
+U 1 1 55C62A8C
+P 1750 3900
+F 0 "SW1" H 1750 4000 50  0000 C CNN
+F 1 "SPST" H 1750 3800 50  0000 C CNN
+F 2 "push_button:push_mini" H 1750 3900 60  0001 C CNN
+F 3 "" H 1750 3900 60  0000 C CNN
+	1    1750 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 3100 1750 3400
+Connection ~ 1750 3200
+Wire Wire Line
+	6900 3400 6900 3550
+Wire Wire Line
+	2700 4600 2700 4950
+Wire Wire Line
+	2350 4400 1750 4400
+Wire Wire Line
+	2050 4400 2050 4650
+Connection ~ 2050 4400
+Text GLabel 1750 2500 1    60   Input ~ 0
++3v
+Text GLabel 6900 3550 3    60   Output ~ 0
+GND
+Text GLabel 2050 4650 3    60   Output ~ 0
+GND
+Text GLabel 2700 4950 3    60   Output ~ 0
+GND
+Text GLabel 6900 2900 2    60   BiDi ~ 0
++3v
+$Comp
+L R R3
+U 1 1 55CE1751
+P 3800 2500
+F 0 "R3" V 3880 2500 50  0000 C CNN
+F 1 "200" V 3800 2500 50  0000 C CNN
+F 2 "Discret:R3" V 3730 2500 30  0001 C CNN
+F 3 "" H 3800 2500 30  0000 C CNN
+	1    3800 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 55CE17A0
+P 4450 2500
+F 0 "D2" H 4450 2600 50  0000 C CNN
+F 1 "LED Temoin" H 4450 2400 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 4450 2500 60  0001 C CNN
+F 3 "" H 4450 2500 60  0000 C CNN
+	1    4450 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 2500 2    60   Output ~ 0
+GND
+Wire Wire Line
+	4650 2500 5100 2500
+Wire Wire Line
+	1750 3200 3450 3200
+Connection ~ 2350 3200
+NoConn ~ 3450 3400
+NoConn ~ 3450 3000
+NoConn ~ 3450 2900
+$Comp
+L CONN_01X02 P1
+U 1 1 55F00CF2
+P 6900 1850
+F 0 "P1" H 6900 2000 50  0000 C CNN
+F 1 "Alim" V 7000 1850 50  0000 C CNN
+F 2 "Discret:CR2032H" H 6900 1850 60  0001 C CNN
+F 3 "" H 6900 1850 60  0000 C CNN
+	1    6900 1850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6400 2050 0    60   Input ~ 0
++3v
+Text GLabel 7550 2050 2    60   Output ~ 0
+GND
+Wire Wire Line
+	6950 2050 7550 2050
+$Comp
+L C C2
+U 1 1 55F00F72
+P 6600 3150
+F 0 "C2" H 6625 3250 50  0000 L CNN
+F 1 "100nf" H 6625 3050 50  0000 L CNN
+F 2 "C1" H 6638 3000 30  0001 C CNN
+F 3 "" H 6600 3150 60  0000 C CNN
+	1    6600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2050 6850 2050
+Wire Wire Line
+	6600 2950 6600 2900
+Connection ~ 6600 2900
+Wire Wire Line
+	6600 3350 6600 3400
+Connection ~ 6600 3400
+Wire Wire Line
+	4050 2500 4250 2500
+Wire Wire Line
+	3450 3100 3250 3100
+Wire Wire Line
+	3250 3100 3250 2500
+Wire Wire Line
+	3250 2500 3550 2500
+Wire Wire Line
+	1750 2500 1750 2700
+Wire Wire Line
+	2350 4100 2350 4400
+Wire Wire Line
+	2350 3700 2350 3200
+Wire Wire Line
+	2700 4200 2700 4000
+Wire Wire Line
+	2700 3500 2700 3300
+Wire Wire Line
+	2700 3300 3450 3300
+Wire Wire Line
+	6150 2900 6900 2900
+Wire Wire Line
+	6150 3400 6900 3400
+$Comp
+L ATTINY85-P IC1
+U 1 1 55F00334
+P 4800 3150
+F 0 "IC1" H 3650 3550 40  0000 C CNN
+F 1 "ATTINY85-P" H 5800 2750 40  0000 C CNN
+F 2 "Sockets_DIP:DIP-8__300_ELL" H 5800 3150 35  0000 C CIN
+F 3 "" H 4800 3150 60  0000 C CNN
+	1    4800 3150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
